@@ -24,13 +24,12 @@ UPPER_LIMIT = 25000
 #  classified as noise.
 # Vary based on: background noise, how loud the baby is, etc.
 NOISE_THRESHOLD = 0.50
-NOISE_THRESHOLD = 0.25
 
 # seconds of quiet before transition mode from "noise" to "quiet"
-MIN_QUIET_TIME = 5
+MIN_QUIET_TIME = 30
 
 # seconds of noise before transition mode from "quiet" to "noise"
-MIN_NOISE_TIME = 5
+MIN_NOISE_TIME = 15
 
 def process_audio(shared_audio, shared_time, shared_pos, lock):
     """
